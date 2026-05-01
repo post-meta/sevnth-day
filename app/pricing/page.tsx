@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/footer";
 export const metadata: Metadata = {
   title: "What things cost",
   description:
-    "$500 audit. $5,000 rebuild. $1,500/mo. Published prices. No hidden retainers.",
+    "Free 48-hour audit. $5,000 fixed-scope rebuild. $1,500/mo retainer. Published prices, no hidden contracts.",
   alternates: { canonical: "/pricing" },
 };
 
