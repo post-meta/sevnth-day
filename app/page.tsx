@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { JsonLd, ORGANIZATION_LD } from "@/components/json-ld";
+import { Marquee } from "@/components/marquee";
 
 const JOBS = [
   {
@@ -82,45 +83,78 @@ export default function Home() {
       <main className="flex-1">
         {/* HERO */}
         <section className="relative border-b border-border bg-grid">
-          <div className="mx-auto max-w-[1200px] px-6 py-24 md:py-40">
-            <div className="label-mono mb-8 md:mb-12">
-              [ 00.HERO ] — Greater Seattle, WA
-            </div>
+          <div className="mx-auto max-w-[1200px] px-6 py-16 md:py-24">
+            <div className="grid gap-12 md:grid-cols-[200px_1fr] md:gap-16">
+              {/* Left spec rail */}
+              <aside className="flex flex-col gap-6">
+                <div className="label-mono">[ 00.HERO ]</div>
 
-            <h1
-              className="text-[clamp(2.5rem,8vw,7.5rem)] font-bold uppercase leading-[0.9] text-foreground"
-              style={{ letterSpacing: "-0.045em" }}
-            >
-              You run
-              <br />
-              the business.
-              <br />
-              <span className="opacity-50">We run</span>
-              <br />
-              <span className="opacity-50">the growth.</span>
-            </h1>
+                <div className="flex flex-col">
+                  <SpecRow label="Base" value="Seattle, WA" />
+                  <SpecRow label="Since" value="2007" />
+                  <SpecRow label="Model" value="Solo operator" />
+                  <SpecRow label="Response" value="Within hours" />
+                  <SpecRow label="Stack" value="Next · AI · SEO" />
+                </div>
 
-            <p className="mt-10 max-w-xl text-base md:text-lg text-foreground/80">
-              For service businesses that need more of the right customers —
-              without becoming their own marketing department.
-            </p>
+                <p className="label-mono leading-relaxed" style={{ opacity: 0.7 }}>
+                  Independent operator. Greater Seattle. In the work since 2007.
+                </p>
+              </aside>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/contact"
-                className="invert-on-hover px-7 py-4 text-xs font-medium uppercase tracking-widest"
-              >
-                Start a 48-Hour Audit →
-              </Link>
-              <Link
-                href="/cases"
-                className="border border-foreground px-7 py-4 text-xs font-medium uppercase tracking-widest transition-opacity hover:opacity-60"
-              >
-                See the work
-              </Link>
+              {/* Right massive headline */}
+              <div className="flex flex-col gap-10">
+                <h1 className="h-mega text-foreground">
+                  You run
+                  <br />
+                  the business.
+                  <br />
+                  <span className="opacity-50">We run</span>
+                  <br />
+                  <span className="opacity-50">the growth.</span>
+                </h1>
+
+                <p className="max-w-xl text-base md:text-lg text-foreground/80">
+                  For service businesses that need more of the right customers
+                  — without becoming their own marketing department.
+                </p>
+
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    href="/contact"
+                    className="invert-on-hover px-7 py-4 text-xs font-medium uppercase tracking-widest"
+                  >
+                    Start a 48-Hour Audit →
+                  </Link>
+                  <Link
+                    href="/cases"
+                    className="border border-foreground px-7 py-4 text-xs font-medium uppercase tracking-widest transition-opacity hover:opacity-60"
+                  >
+                    See the work
+                  </Link>
+                </div>
+
+                {/* Service tag rail */}
+                <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+                  {[
+                    "/ Local SEO",
+                    "/ AI Lead Capture",
+                    "/ Next.js Builds",
+                    "/ GBP Optimization",
+                    "/ Audits",
+                  ].map((tag) => (
+                    <li key={tag} className="label-mono">
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
+
+        {/* MARQUEE STRIP */}
+        <Marquee />
 
         {/* JOB PICKER */}
         <section className="border-b border-border">
@@ -258,10 +292,7 @@ export default function Home() {
               <span className="divider-ascii">05.READY</span>
             </div>
 
-            <h2
-              className="text-[clamp(2.25rem,6vw,5rem)] font-bold uppercase leading-[0.95]"
-              style={{ letterSpacing: "-0.04em" }}
-            >
+            <h2 className="h-large">
               Tell us what's broken.
               <br />
               <span className="opacity-50">
@@ -289,5 +320,14 @@ export default function Home() {
 
       <Footer />
     </>
+  );
+}
+
+function SpecRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="spec-row">
+      <span>{label}</span>
+      <span>{value}</span>
+    </div>
   );
 }
