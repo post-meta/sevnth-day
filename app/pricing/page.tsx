@@ -14,10 +14,10 @@ const TIERS = [
   {
     n: "01",
     label: "Audit",
-    price: "$500",
-    cadence: "48 hours · one-time",
+    price: "Free",
+    cadence: "48 hours · no commitment",
     body: "Full diagnostic of site, SEO, Google Business Profile, and lead flow. Recorded walkthrough. Prioritized fix list.",
-    note: "Credits 100% toward a rebuild if you go forward.",
+    note: "No retainer pressure. You walk away with the findings either way.",
   },
   {
     n: "02",

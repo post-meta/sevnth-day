@@ -108,7 +108,7 @@ export const SERVICES: Record<ServiceSlug, ServiceData> = {
       "Local SEO snapshot — rankings, GBP gaps, review velocity vs competitors.",
       "Lead flow trace — where inquiries come in, where they leak.",
       "Recorded walkthrough video and a prioritized fix list.",
-      "Credits 100% toward a website rebuild if you go forward.",
+      "Free. 48 hours. No retainer pressure.",
     ],
     whatsNot: [
       "Not a 40-page PDF nobody reads.",
