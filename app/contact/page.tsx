@@ -27,7 +27,7 @@ export default function ContactPage() {
               Tell us what's broken.
             </h1>
             <p className="mt-6 max-w-xl text-base md:text-lg text-foreground/80">
-              We'll come back within one business day. Audit is $500 — credits 100% toward a rebuild if you go forward.
+              We reply within one business day. The 48-hour audit is $500 and credits 100% toward a rebuild.
             </p>
           </div>
         </section>

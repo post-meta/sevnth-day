@@ -84,7 +84,7 @@ export function ContactForm() {
         name="whatsBroken"
         required
         rows={5}
-        placeholder="Describe what's not working — phone not ringing, agency burned you, lead bot stuck, anything."
+        placeholder="Describe what's not working — phone not ringing, leads slipping, site stuck, anything."
       />
 
       {/* honeypot */}

@@ -53,7 +53,7 @@ export const JOBS: Record<JobSlug, JobData> = {
       label: "02.WHAT_WE_DO",
       heading: "We rebuild the system that brings customers to you",
       bullets: [
-        "Local SEO that ranks for the searches your customers actually make.",
+        "Local SEO that ranks for the searches your customers run.",
         "Google Business Profile that shows up in the map pack.",
         "Website that turns visitors into calls and booked jobs.",
         "AI lead capture that catches inquiries when you can't pick up.",
@@ -79,19 +79,18 @@ export const JOBS: Record<JobSlug, JobData> = {
     problem: {
       label: "01.THE_PROBLEM",
       paragraphs: [
-        "Most website redesigns fail to deliver ROI. The reason: agencies fix the visuals when the problem is the conversion path.",
-        "You bought a prettier site. Same number of calls. Sometimes fewer.",
-        "You got SEO reports that show \"traffic up\" while bookings stay flat. You got a chatbot you can't turn off and never trained. You got monthly invoices for work nobody can show you.",
+        "A new site shipped. Same number of calls. Sometimes fewer.",
+        "Reports show traffic going up while bookings stay flat. The visuals got fixed; the conversion path didn't.",
       ],
     },
     whatWeDo: {
       label: "02.HOW_WERE_DIFFERENT",
       heading: "How we work, differently",
       bullets: [
-        "We do the audit before you commit. You see what we'd actually do.",
-        "We charge for the rebuild as a fixed scope. Not hours. Not phases.",
-        "We don't start a monthly retainer until the rebuild ships and starts working.",
-        "If we can't fix it, we say so. We don't bill for diagnosis disguised as strategy.",
+        "Audit before commitment. You see what we'd actually do.",
+        "Rebuild as fixed scope. Not hours. Not phases.",
+        "Monthly retainer starts only after the rebuild ships and starts working.",
+        "If we can't fix it, we say so.",
       ],
     },
     proof: { caseSlugs: ["nw-garage-doors", "copper-fox-gutters"] },
@@ -124,10 +123,10 @@ export const JOBS: Record<JobSlug, JobData> = {
       label: "02.HOW_WE_WORK",
       heading: "How we work",
       bullets: [
-        "We handle everything from technical to content to local rankings.",
-        "You see one monthly summary. Plain language. Numbers, not graphs nobody reads.",
+        "Technical, content, local rankings — all handled.",
+        "One monthly summary. Plain language.",
         "Leads come to you as calls, texts, or notifications — already qualified.",
-        "No status meetings. No campaigns to approve. No surprise invoices.",
+        "Fixed monthly fee. Cancel anytime.",
       ],
     },
     proof: { caseSlugs: ["copper-fox-gutters", "flawless-aesthetics"] },

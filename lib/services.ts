@@ -30,7 +30,7 @@ export const SERVICES: Record<ServiceSlug, ServiceData> = {
     whatsIncluded: [
       "Custom design and build on a modern stack (Next.js, Tailwind, MDX where it fits).",
       "Local SEO foundation: structured data, semantic markup, internal linking.",
-      "Lead capture wired to your phone or CRM, with notifications you'll actually read.",
+      "Lead capture wired to your phone or CRM.",
       "Performance budget: Lighthouse mobile 90+, sub-second LCP.",
       "Two weeks from kickoff to live, in fixed scope.",
     ],
@@ -49,13 +49,13 @@ export const SERVICES: Record<ServiceSlug, ServiceData> = {
       "Rank in the local pack. Google Business Profile, local content, review velocity, technical fixes. Monthly retainer.",
     whatsIncluded: [
       "Google Business Profile audit and optimization (categories, services, photos, posts).",
-      "Local content program — city + service permutations written for actual search intent, not thin spam.",
+      "Local content program — city + service pages written for real search intent.",
       "Review velocity workflow built into your operator's daily flow.",
       "Citation cleanup, NAP consistency, schema markup.",
-      "Monthly summary in plain language. Numbers, not graphs.",
+      "Monthly summary in plain language.",
     ],
     whoFor:
-      "Service businesses with a defined service area that need to win the Local Pack and stop losing calls to competitors who are simply showing up.",
+      "Service businesses with a defined service area that need to win the Local Pack and stop losing calls in their territory.",
   },
   "ai-lead-capture": {
     slug: "ai-lead-capture",
@@ -71,7 +71,7 @@ export const SERVICES: Record<ServiceSlug, ServiceData> = {
       "Custom-built lead bot trained on your services, pricing, and qualification criteria.",
       "Channel coverage: web chat, Messenger, Telegram, or SMS — wherever your customers come in.",
       "Notification flow: leads land in your phone as a text or call, already qualified.",
-      "Live in days, not weeks. Iterates with usage.",
+      "Live in days, not weeks.",
       "Compliance-aware where it matters (medspa, regulated services).",
     ],
     whoFor:
@@ -95,7 +95,7 @@ export const SERVICES: Record<ServiceSlug, ServiceData> = {
       "Credits 100% toward a website rebuild if you go forward.",
     ],
     whoFor:
-      "Anyone considering an agency engagement who wants to see what they'd actually be paying for before signing anything.",
+      "Service businesses considering an investment in their site, SEO, or lead flow — and who want to see what's broken before committing.",
   },
 };
 

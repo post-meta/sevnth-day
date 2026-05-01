@@ -59,44 +59,17 @@ export default function AboutPage() {
             <div className="space-y-6 text-lg leading-relaxed md:text-xl md:leading-relaxed">
               <p>
                 I'm Eugene. I've been writing code for the web since 2007 and
-                ranking sites in Google since 2009. I run SEVENTH DAY solo —
-                not because I want to scale a team, but because modern tools
-                let one experienced operator do what used to take five.
-              </p>
-              <p className="text-foreground/70">
-                That's why I can charge service-business prices and ship
-                enterprise-grade work.
+                ranking sites in Google since 2009. SEVENTH DAY is run solo
+                from Greater Seattle.
               </p>
             </div>
-          </div>
-        </section>
-
-        <section className="border-b border-border bg-foreground text-background">
-          <div className="mx-auto grid max-w-[1200px] gap-12 px-6 py-20 md:grid-cols-[1fr_2fr] md:py-28">
-            <div>
-              <div
-                className="label-mono"
-                style={{ color: "var(--background)", opacity: 0.55 }}
-              >
-                <span className="divider-ascii">02.WHY_SOLO</span>
-              </div>
-            </div>
-            <ul className="space-y-5 text-lg md:text-xl">
-              <li>No account managers between you and me.</li>
-              <li>No junior dev quietly breaking your build.</li>
-              <li>
-                No <span className="opacity-60">"we'll get back to you Monday"</span>{" "}
-                when it's broken Friday.
-              </li>
-              <li>You email me. I answer. I fix it.</li>
-            </ul>
           </div>
         </section>
 
         <section className="border-b border-border">
           <div className="mx-auto max-w-[1200px] px-6 py-20 md:py-28">
             <div className="label-mono mb-8">
-              <span className="divider-ascii">03.THE_WORK</span>
+              <span className="divider-ascii">02.THE_WORK</span>
             </div>
             <h2
               className="mb-12 text-3xl font-bold uppercase md:text-5xl"

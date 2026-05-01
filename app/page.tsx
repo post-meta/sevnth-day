@@ -59,12 +59,12 @@ const STEPS = [
   {
     n: "02",
     title: "Show",
-    body: "You see exactly what's broken and what isn't. No PDF novel. Recorded walkthrough.",
+    body: "Recorded walkthrough — exactly what's broken and what isn't.",
   },
   {
     n: "03",
     title: "Fix",
-    body: "We rebuild what we can ship. Fixed scope. You see results before any retainer starts.",
+    body: "Rebuild as fixed scope. Results ship before any retainer starts.",
   },
   {
     n: "04",

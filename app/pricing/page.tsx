@@ -52,8 +52,7 @@ export default function PricingPage() {
               What things cost.
             </h1>
             <p className="mt-6 max-w-2xl text-base md:text-lg text-foreground/80">
-              We publish prices. Most agencies don't. If you have to ask, the
-              answer is always more.
+              Three tiers. Published. The audit credits toward a rebuild.
             </p>
           </div>
         </section>
@@ -104,8 +103,7 @@ export default function PricingPage() {
               <span className="opacity-50">full automation.</span>
             </h2>
             <p className="max-w-2xl text-base md:text-lg text-foreground/80">
-              Custom scope. We tell you a number after the audit, not before.
-              That's the only honest way.
+              Custom scope. We give you a number after the audit, not before.
             </p>
           </div>
         </section>

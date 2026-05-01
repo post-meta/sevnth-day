@@ -33,7 +33,7 @@ export const CASES: Record<CaseSlug, CaseData> = {
     whatWeDid: [
       "Rebuilt the site on a modern Next.js stack — fast, structured, ready for ads landing pages and local content scaling.",
       "Mapped every legacy URL and shipped a comprehensive 301 plan so existing rankings carried over cleanly.",
-      "Built city + service permutations as templated pages with real local context — not thin spam.",
+      "Built city + service permutations as templated pages with real local context.",
       "Set up structured data (LocalBusiness, Service, FAQ) and tightened internal linking.",
     ],
     whatsRunning: [
@@ -58,7 +58,7 @@ export const CASES: Record<CaseSlug, CaseData> = {
     ],
     whatWeDid: [
       "Built the brand from scratch — naming, voice, identity, the fox mascot — with the operator's actual story driving every choice.",
-      "Wrote and shipped a credibility-first website. Fast, opinionated, no agency-template smell.",
+      "Wrote and shipped a credibility-first website. Fast and opinionated, written to match the operator's voice.",
       "Set up Google Business Profile with proper categories, photos, and review prompts wired into the operator's workflow.",
       "Stage 1 of the blog program: 6 articles, ~11,500 words, all written to match the brand voice and the homeowner's actual questions.",
     ],
