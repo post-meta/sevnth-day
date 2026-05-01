@@ -140,7 +140,7 @@ export function CasePage({ slug }: { slug: CaseSlug }) {
                 href="/contact"
                 className="invert-on-hover px-7 py-4 text-xs font-medium uppercase tracking-widest"
               >
-                Free 48-Hour Audit →
+                Start a 48-Hour Audit →
               </Link>
             </div>
           </div>

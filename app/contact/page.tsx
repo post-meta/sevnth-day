@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/contact-form";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Tell us what's broken. We'll tell you if we can fix it. Free 48-hour audit, no retainer until you see the result.",
+    "Tell us what's broken. We'll tell you if we can fix it. $500 48-hour audit, credits toward a rebuild if you go forward.",
   alternates: { canonical: "/contact" },
 };
 
@@ -27,7 +27,7 @@ export default function ContactPage() {
               Tell us what's broken.
             </h1>
             <p className="mt-6 max-w-xl text-base md:text-lg text-foreground/80">
-              We'll come back within one business day. Audit is free.
+              We'll come back within one business day. Audit is $500 — credits 100% toward a rebuild if you go forward.
             </p>
           </div>
         </section>

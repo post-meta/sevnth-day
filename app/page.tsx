@@ -54,7 +54,7 @@ const STEPS = [
   {
     n: "01",
     title: "Audit",
-    body: "We diagnose what you have. Free. 48 hours. Site, SEO, Google Business Profile, lead flow.",
+    body: "We diagnose what you have. 48 hours. $500 — credits 100% toward a rebuild. Site, SEO, GBP, lead flow.",
   },
   {
     n: "02",
@@ -110,7 +110,7 @@ export default function Home() {
                 href="/contact"
                 className="invert-on-hover px-7 py-4 text-xs font-medium uppercase tracking-widest"
               >
-                Free 48-Hour Audit →
+                Start a 48-Hour Audit →
               </Link>
               <Link
                 href="/cases"
@@ -274,7 +274,7 @@ export default function Home() {
                 href="/contact"
                 className="invert-on-hover px-7 py-4 text-xs font-medium uppercase tracking-widest"
               >
-                Start a Free Audit →
+                Start an Audit →
               </Link>
               <a
                 href="mailto:01@seventh.day"

@@ -42,7 +42,7 @@ export function Header() {
           href="/contact"
           className="hidden md:inline-flex invert-on-hover px-5 py-2.5 text-xs font-medium uppercase tracking-widest"
         >
-          Free Audit →
+          Start an Audit →
         </Link>
 
         <button
@@ -76,7 +76,7 @@ export function Header() {
               onClick={() => setOpen(false)}
               className="invert-on-hover mt-3 px-5 py-3 text-center text-xs font-medium uppercase tracking-widest"
             >
-              Free Audit →
+              Start an Audit →
             </Link>
           </nav>
         </div>

@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/footer";
 export const metadata: Metadata = {
   title: "What things cost",
   description:
-    "Free 48-hour audit. $5,000 fixed-scope rebuild. $1,500/mo retainer. Published prices, no hidden contracts.",
+    "$500 audit. $5,000 rebuild. $1,500/mo. Published prices. No hidden retainers.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -14,10 +14,10 @@ const TIERS = [
   {
     n: "01",
     label: "Audit",
-    price: "Free",
-    cadence: "48 hours · no commitment",
+    price: "$500",
+    cadence: "48 hours · one-time",
     body: "Full diagnostic of site, SEO, Google Business Profile, and lead flow. Recorded walkthrough. Prioritized fix list.",
-    note: "No retainer pressure. You walk away with the findings either way.",
+    note: "Credits 100% toward a rebuild if you go forward.",
   },
   {
     n: "02",
@@ -123,7 +123,7 @@ export default function PricingPage() {
                 href="/contact"
                 className="invert-on-hover px-7 py-4 text-xs font-medium uppercase tracking-widest"
               >
-                Free 48-Hour Audit →
+                Start a 48-Hour Audit →
               </Link>
             </div>
           </div>

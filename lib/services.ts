@@ -102,13 +102,13 @@ export const SERVICES: Record<ServiceSlug, ServiceData> = {
       "Site, SEO, GBP, lead flow. You see exactly what's broken before any rebuild starts. Recorded walkthrough. Prioritized fix list.",
     metaTitle: "48-hour audit for service businesses",
     metaDescription:
-      "Free 48-hour diagnostic of site, SEO, Google Business Profile, and lead flow. Recorded walkthrough. Prioritized fix list.",
+      "$500 48-hour diagnostic of site, SEO, Google Business Profile, and lead flow. Recorded walkthrough. Prioritized fix list. Credits toward rebuild.",
     whatsIncluded: [
       "Full site review — performance, conversion, structure, mobile UX.",
       "Local SEO snapshot — rankings, GBP gaps, review velocity vs competitors.",
       "Lead flow trace — where inquiries come in, where they leak.",
       "Recorded walkthrough video and a prioritized fix list.",
-      "Free. 48 hours. No retainer pressure.",
+      "Credits 100% toward a website rebuild if you go forward.",
     ],
     whatsNot: [
       "Not a 40-page PDF nobody reads.",

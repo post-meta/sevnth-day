@@ -39,7 +39,7 @@ export const JOBS: Record<JobSlug, JobData> = {
       headline: "More calls.",
       headlineMuted: "More booked jobs.",
       sub: "You don't need a marketing strategy. You need the phone to ring with the right customers from your service area.",
-      cta: "Free Audit",
+      cta: "Start an Audit",
     },
     problem: {
       label: "01.THE_PROBLEM",
@@ -62,7 +62,7 @@ export const JOBS: Record<JobSlug, JobData> = {
     proof: { caseSlugs: ["nw-garage-doors", "flawless-aesthetics"] },
     closing: {
       headline: "Want to see where your leads are leaking?",
-      cta: "Free Audit",
+      cta: "Start an Audit",
     },
   },
   rebuild: {
@@ -74,7 +74,7 @@ export const JOBS: Record<JobSlug, JobData> = {
       headline: "Paid an agency before.",
       headlineMuted: "Nothing happened.",
       sub: "This time, you don't pay a retainer until you see the result.",
-      cta: "Free 48-Hour Diagnostic",
+      cta: "Start a Diagnostic",
     },
     problem: {
       label: "01.THE_PROBLEM",
@@ -97,7 +97,7 @@ export const JOBS: Record<JobSlug, JobData> = {
     proof: { caseSlugs: ["nw-garage-doors", "copper-fox-gutters"] },
     closing: {
       headline: "Tell us what your last agency built.",
-      headlineMuted: "We'll audit it free.",
+      headlineMuted: "We'll diagnose it for $500 — credits toward the rebuild.",
       cta: "Start Diagnostic",
     },
   },
@@ -110,7 +110,7 @@ export const JOBS: Record<JobSlug, JobData> = {
       headline: "Stop being your own",
       headlineMuted: "marketing department.",
       sub: "You service the customers. We bring them in. Quietly.",
-      cta: "Free Audit",
+      cta: "Start an Audit",
     },
     problem: {
       label: "01.THE_PROBLEM",
@@ -133,7 +133,7 @@ export const JOBS: Record<JobSlug, JobData> = {
     proof: { caseSlugs: ["copper-fox-gutters", "flawless-aesthetics"] },
     closing: {
       headline: "Want to hand it off?",
-      cta: "Free Audit",
+      cta: "Start an Audit",
     },
   },
   catchup: {
@@ -145,7 +145,7 @@ export const JOBS: Record<JobSlug, JobData> = {
       headline: "Your competitors are getting",
       headlineMuted: "the calls that should be yours.",
       sub: "Local search is winnable. Most service businesses just don't try.",
-      cta: "Free Competitive Audit",
+      cta: "Start a Competitive Audit",
     },
     problem: {
       label: "01.THE_PROBLEM",
@@ -168,7 +168,7 @@ export const JOBS: Record<JobSlug, JobData> = {
     proof: { caseSlugs: ["nw-garage-doors", "copper-fox-gutters"] },
     closing: {
       headline: "Want to see how you stack up?",
-      cta: "Free Competitive Audit",
+      cta: "Start a Competitive Audit",
     },
   },
 };
@@ -177,7 +177,7 @@ export const STEPS = [
   {
     n: "01",
     title: "Audit",
-    body: "Free 48-hour diagnostic. Site, SEO, GBP, lead flow.",
+    body: "$500 · 48-hour diagnostic. Site, SEO, GBP, lead flow. Credits toward rebuild.",
   },
   {
     n: "02",

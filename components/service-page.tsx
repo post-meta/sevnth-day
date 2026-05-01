@@ -100,7 +100,7 @@ export function ServicePage({ slug }: { slug: ServiceSlug }) {
                 href="/contact"
                 className="invert-on-hover px-7 py-4 text-xs font-medium uppercase tracking-widest"
               >
-                Free 48-Hour Audit →
+                Start a 48-Hour Audit →
               </Link>
               <Link
                 href="/services"
