@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { ContactForm } from "@/components/contact-form";
-import { CalEmbed } from "@/components/cal-embed";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -16,7 +15,6 @@ export default function ContactPage() {
     <>
       <Header />
       <main className="flex-1">
-        {/* HERO */}
         <section className="border-b border-border bg-grid">
           <div className="mx-auto max-w-[1200px] px-6 py-20 md:py-28">
             <div className="label-mono mb-8">
@@ -26,51 +24,57 @@ export default function ContactPage() {
               className="text-[clamp(2.5rem,7vw,5.5rem)] font-bold uppercase leading-[0.95]"
               style={{ letterSpacing: "-0.04em" }}
             >
-              Get in touch.
+              Tell us what's broken.
             </h1>
             <p className="mt-6 max-w-xl text-base md:text-lg text-foreground/80">
-              Two ways: book a 30-min discovery call, or write what's broken
-              and we'll come back within a business day.
+              We'll come back within one business day. Audit is free.
             </p>
           </div>
         </section>
 
-        {/* TWO COLUMNS: form + cal embed */}
         <section>
-          <div className="mx-auto grid max-w-[1200px] gap-16 px-6 py-20 md:grid-cols-2 md:py-28">
-            {/* Form */}
+          <div className="mx-auto grid max-w-[1200px] gap-16 px-6 py-20 md:grid-cols-[2fr_1fr] md:py-28">
             <div>
               <div className="label-mono mb-6">
                 <span className="divider-ascii">01.WRITE</span>
               </div>
-              <h2
-                className="mb-8 text-2xl font-bold uppercase md:text-3xl"
-                style={{ letterSpacing: "-0.025em" }}
-              >
-                Tell us what's broken.
-              </h2>
               <ContactForm />
             </div>
 
-            {/* Cal */}
-            <div>
-              <div className="label-mono mb-6">
-                <span className="divider-ascii">02.BOOK</span>
-              </div>
-              <h2
-                className="mb-8 text-2xl font-bold uppercase md:text-3xl"
-                style={{ letterSpacing: "-0.025em" }}
-              >
-                Book a 30-min call.
-              </h2>
-              <CalEmbed />
-              <p className="label-mono mt-4">
-                Or email{" "}
-                <a className="underline" href="mailto:01@sevnth.day">
+            <aside className="space-y-10">
+              <div>
+                <div className="label-mono mb-3">EMAIL</div>
+                <a
+                  href="mailto:01@sevnth.day"
+                  className="text-2xl font-bold uppercase tracking-tight transition-opacity hover:opacity-60"
+                >
                   01@sevnth.day
                 </a>
-              </p>
-            </div>
+              </div>
+
+              <div>
+                <div className="label-mono mb-3">LOCATION</div>
+                <p className="text-base">Greater Seattle, WA</p>
+                <p className="label-mono mt-1">[ 47.5301°N · 122.0326°W ]</p>
+              </div>
+
+              <div>
+                <div className="label-mono mb-3">RESPONSE TIME</div>
+                <p className="text-base">One business day.</p>
+                <p className="text-sm text-muted">
+                  Faster if it's a fire and you say so.
+                </p>
+              </div>
+
+              <div>
+                <div className="label-mono mb-3">WHAT HAPPENS NEXT</div>
+                <ol className="space-y-2 text-sm">
+                  <li>1. We read what's broken.</li>
+                  <li>2. If we can help, we send a 48-hour audit plan.</li>
+                  <li>3. You decide. No pitch. No retainer pressure.</li>
+                </ol>
+              </div>
+            </aside>
           </div>
         </section>
       </main>
