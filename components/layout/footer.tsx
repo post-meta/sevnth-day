@@ -33,6 +33,20 @@ export function Footer() {
 
   return (
     <footer className="mt-24 border-t border-border">
+      {/* Manifest panel */}
+      <div className="border-b border-border bg-foreground py-10 text-background md:py-14">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <p
+            className="text-3xl font-bold uppercase leading-tight md:text-5xl md:leading-tight"
+            style={{ letterSpacing: "-0.03em" }}
+          >
+            Structured like a system.
+            <br />
+            <span className="opacity-50">Not a brochure.</span>
+          </p>
+        </div>
+      </div>
+
       <div className="mx-auto max-w-[1200px] px-6 py-16">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>

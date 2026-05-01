@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { JsonLd, ORGANIZATION_LD } from "@/components/json-ld";
+import { Marquee } from "@/components/marquee";
 
 const JOBS = [
   {
@@ -121,6 +122,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <Marquee />
 
         {/* JOB PICKER */}
         <section className="border-b border-border">
