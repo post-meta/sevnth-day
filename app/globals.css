@@ -79,30 +79,6 @@ body {
   background-size: 80px 80px;
 }
 
-/* Marquee — auto-scrolling tag strip */
-.marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-}
-.marquee-track {
-  display: inline-flex;
-  gap: 1.5rem;
-  animation: marquee-scroll 60s linear infinite;
-  will-change: transform;
-}
-.marquee:hover .marquee-track {
-  animation-play-state: paused;
-}
-@keyframes marquee-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
