@@ -1,31 +1,29 @@
-# TODO — sevnth.day launch
+# TODO — seventh.day launch
 
-## Phase 0 — accounts and infra (user actions)
+## Phase 0 — accounts and infra
 
-- [ ] **Cal.com**: register, claim handle `sevnthday`, create event "30-min Discovery Call", connect Google Calendar. Verify `cal.com/sevnthday/discovery` resolves.
-- [ ] **Resend**: sign up at resend.com → Domains → add `sevnth.day` → add SPF/DKIM/DMARC records to Cloudflare DNS → wait for verification → API Keys → create production key.
-- [ ] **Email aliases**: confirm `01@sevnth.day` and `noreply@sevnth.day` route to your inbox (Cloudflare Email Routing or Google Workspace).
+- [x] **Resend**: account exists, `seventh.day` domain added with DKIM/DMARC/verification records in Cloudflare DNS
+- [ ] **Resend API key** for `seventh.day`: create at https://resend.com/api-keys (existing keys are restricted to other domains: foxgutters/garage-door/cleenly/thecentral). Permission `Sending access`, domain `seventh.day`. Paste key — gets set as Vercel env var.
+- [x] **Email aliases**: `01@seventh.day` routed via SpaceMail MX (mx0001/mx0002.mx.spec...) per CF DNS
 
 ## Phase 7 — deploy
 
-- [ ] `vercel link` (or import via Vercel UI) — connect repo to Vercel project
-- [ ] Set Vercel env vars: `RESEND_API_KEY`, `RESEND_FROM=noreply@sevnth.day`, `RESEND_TO=01@sevnth.day`
-- [ ] Attach custom domain `sevnth.day` in Vercel
-- [ ] Cloudflare DNS: A → `76.76.21.21` (Vercel) for apex, CNAME `www` → `cname.vercel-dns.com`
-- [ ] First production deploy
-- [ ] **End-to-end test**: submit form → check Resend dashboard delivery → check `01@sevnth.day` inbox
-- [ ] **End-to-end test**: open `/contact` → verify Cal.com iframe loads → book a test slot
+- [x] Vercel project `sevnth-day` (prj_fUZbVESAIZ6z8NodnkJuXIlVlL90) linked to GitHub `post-meta/sevnth-day`
+- [x] First production deploy at `sevnth-day.vercel.app` (19/19 routes 200, OG works, API validation works)
+- [ ] **Repoint `seventh.day`**: detach from old `seventhday` Vercel project, attach to new `sevnth-day` project (apex + www redirect)
+- [ ] **Set Resend env vars**: `RESEND_FROM=noreply@seventh.day`, `RESEND_TO=01@seventh.day` (done), `RESEND_API_KEY=<from above>`
+- [ ] **End-to-end test**: submit `/contact` form on https://seventh.day → check Resend dashboard `Emails` for delivery → check `01@seventh.day` inbox
 
 ## Phase 8 — content fill (post-launch refinement)
 
-- [ ] Pull real metrics from project notes for each case study (currently outcome lines are honest but generic):
-  - NW Garage Doors — actual organic traffic / call volume numbers from your records
+- [ ] Pull real metrics from project notes for each case study:
+  - NW Garage Doors — actual organic traffic / call volume from records
   - Copper Fox Gutters — Stage 1 blog metrics, GBP review velocity
   - Flawless Aesthetics — bot conversion, lead response time
 - [ ] Add client quote per case study (with permission)
-- [ ] Add 1-2 photos per case study (real work, not stock)
+- [ ] Add 1-2 real photos per case study (not stock)
 
-## Open items (deferred, not blocking)
+## Open items (deferred)
 
 - [ ] Category positioning ("studio" / "growth studio" / no-category) — set in `<title>` after launch traffic data
 - [ ] Premium audit tier ($2,500 AI Readiness Audit) — Phase 2 product
@@ -33,9 +31,11 @@
 - [ ] Reddit GEO content — 5 deep answer posts in r/smallbusiness, r/[trade] subs
 - [ ] Multi-language (RU pages for Slavic diaspora cold outreach)
 - [ ] Pricing increase to $750 / $7,500 / $2,500 after 5 cases shipped
+- [ ] Cal.com booking flow — deferred per user decision 2026-05-01
 
 ## Cleanup after launch
 
+- [ ] Detach `seventh.day` from `seventhday` Vercel project before reattaching
 - [ ] Archive `post-meta/SEVENTH-DAY-AGENCY` on GitHub
 - [ ] Archive `post-meta/seventhday` on GitHub
 - [ ] Archive `post-meta/seventh-day-ref` on GitHub

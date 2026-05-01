@@ -16,8 +16,8 @@ export const ORGANIZATION_LD = {
   "@type": ["Organization", "ProfessionalService"],
   name: "SEVENTH DAY",
   alternateName: "SVNTH.DAY",
-  url: "https://sevnth.day",
-  email: "01@sevnth.day",
+  url: "https://seventh.day",
+  email: "01@seventh.day",
   description:
     "Growth operations for service businesses: websites, local SEO, AI lead capture. Solo operator, Greater Seattle.",
   founder: {
@@ -44,9 +44,9 @@ export const PERSON_LD = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Eugene Krasnoperov",
-  url: "https://sevnth.day/about",
+  url: "https://seventh.day/about",
   jobTitle: "Founder, SEVENTH DAY",
   worksFor: { "@type": "Organization", name: "SEVENTH DAY" },
-  email: "01@sevnth.day",
+  email: "01@seventh.day",
   sameAs: ["https://www.linkedin.com/in/ekrasnoperov"],
 };

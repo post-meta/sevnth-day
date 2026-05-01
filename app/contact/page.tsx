@@ -45,10 +45,10 @@ export default function ContactPage() {
               <div>
                 <div className="label-mono mb-3">EMAIL</div>
                 <a
-                  href="mailto:01@sevnth.day"
+                  href="mailto:01@seventh.day"
                   className="text-2xl font-bold uppercase tracking-tight transition-opacity hover:opacity-60"
                 >
-                  01@sevnth.day
+                  01@seventh.day
                 </a>
               </div>
 

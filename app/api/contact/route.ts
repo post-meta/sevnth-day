@@ -3,8 +3,8 @@ import { Resend } from "resend";
 
 export const runtime = "nodejs";
 
-const FROM = process.env.RESEND_FROM ?? "noreply@sevnth.day";
-const TO = process.env.RESEND_TO ?? "01@sevnth.day";
+const FROM = process.env.RESEND_FROM ?? "noreply@seventh.day";
+const TO = process.env.RESEND_TO ?? "01@seventh.day";
 
 type Payload = {
   name?: string;

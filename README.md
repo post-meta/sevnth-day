@@ -2,15 +2,15 @@
 
 Growth operations for service businesses. Solo operator, Greater Seattle.
 
-Production: https://sevnth.day
+Production: https://seventh.day
 
 ## Stack
 
 - Next.js 16 App Router · React 19 · TypeScript strict
 - Tailwind CSS v4 (CSS-based config)
 - Inter + JetBrains Mono via `next/font/google`
-- Resend (transactional email) · Cal.com embed (booking)
-- Deploy: Vercel · Domain: Cloudflare DNS
+- Resend (transactional email)
+- Deploy: Vercel · Domain DNS: Cloudflare
 
 ## Local development
 
@@ -21,9 +21,9 @@ pnpm dev   # http://localhost:3000
 
 Required env vars (see `.env.example`):
 
-- `RESEND_API_KEY` — from https://resend.com/api-keys (after verifying `sevnth.day` domain)
-- `RESEND_FROM` — defaults to `noreply@sevnth.day`
-- `RESEND_TO` — defaults to `01@sevnth.day`
+- `RESEND_API_KEY` — from https://resend.com/api-keys (after verifying `seventh.day` domain)
+- `RESEND_FROM` — defaults to `noreply@seventh.day`
+- `RESEND_TO` — defaults to `01@seventh.day`
 
 ## Routes
 
@@ -35,8 +35,8 @@ Required env vars (see `.env.example`):
 | `/cases` + 3 sub-pages | NW Garage / Copper Fox / Flawless |
 | `/about` | Founder story |
 | `/pricing` | Published prices |
-| `/contact` | Form + Cal.com embed |
-| `/api/contact` | POST → Resend → 01@sevnth.day |
+| `/contact` | Form + sidebar |
+| `/api/contact` | POST → Resend → 01@seventh.day |
 | `/sitemap.xml`, `/robots.txt`, `/opengraph-image` | SEO assets |
 
 ## Design tokens
@@ -55,7 +55,7 @@ See `app/globals.css` for token + utility classes (`label-mono`, `divider-ascii`
 
 1. Vercel → New Project → import `post-meta/sevnth-day`
 2. Set env vars (`RESEND_API_KEY`)
-3. Add custom domain `sevnth.day` (and `www.sevnth.day` redirect)
+3. Add custom domain `seventh.day` (and `www.seventh.day` redirect)
 4. Cloudflare: confirm A/CNAME records per Vercel
 
 ## Status

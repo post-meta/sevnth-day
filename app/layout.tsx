@@ -15,7 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sevnth.day"),
+  metadataBase: new URL("https://seventh.day"),
   title: {
     default: "SEVENTH DAY — Growth for service businesses",
     template: "%s — SEVENTH DAY",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "SEVENTH DAY",
     locale: "en_US",
-    url: "https://sevnth.day",
+    url: "https://seventh.day",
   },
   twitter: {
     card: "summary_large_image",

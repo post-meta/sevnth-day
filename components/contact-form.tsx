@@ -52,8 +52,8 @@ export function ContactForm() {
         </h3>
         <p className="mt-3 text-foreground/80">
           We'll come back within one business day. If urgent, email{" "}
-          <a className="underline" href="mailto:01@sevnth.day">
-            01@sevnth.day
+          <a className="underline" href="mailto:01@seventh.day">
+            01@seventh.day
           </a>
           .
         </p>

@@ -65,7 +65,7 @@ export default function OGImage() {
           }}
         >
           <div style={{ display: "flex" }}>Greater Seattle, WA</div>
-          <div style={{ display: "flex" }}>01@sevnth.day</div>
+          <div style={{ display: "flex" }}>01@seventh.day</div>
         </div>
       </div>
     ),

@@ -69,10 +69,10 @@ export function Footer() {
           <div className="label-mono">© {year} · POST META LLC</div>
           <div className="label-mono">
             <a
-              href="mailto:01@sevnth.day"
+              href="mailto:01@seventh.day"
               className="transition-opacity hover:opacity-60"
             >
-              01@sevnth.day
+              01@seventh.day
             </a>
           </div>
           <div className="label-mono">[ END.OF.TRANSMISSION ]</div>

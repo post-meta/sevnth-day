@@ -143,10 +143,10 @@ export default function AboutPage() {
                 Book a Call →
               </Link>
               <a
-                href="mailto:01@sevnth.day"
+                href="mailto:01@seventh.day"
                 className="border border-foreground px-7 py-4 text-xs font-medium uppercase tracking-widest transition-opacity hover:opacity-60"
               >
-                01@sevnth.day
+                01@seventh.day
               </a>
             </div>
           </div>

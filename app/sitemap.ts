@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE = "https://sevnth.day";
+const BASE = "https://seventh.day";
 
 const STATIC_PATHS = [
   "/",
