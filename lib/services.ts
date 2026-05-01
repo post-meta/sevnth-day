@@ -13,7 +13,6 @@ export type ServiceData = {
   metaTitle: string;
   metaDescription: string;
   whatsIncluded: string[];
-  whatsNot: string[];
   whoFor: string;
 };
 
@@ -35,11 +34,6 @@ export const SERVICES: Record<ServiceSlug, ServiceData> = {
       "Performance budget: Lighthouse mobile 90+, sub-second LCP.",
       "Two weeks from kickoff to live, in fixed scope.",
     ],
-    whatsNot: [
-      "We don't ship pre-built themes with your logo dropped in.",
-      "We don't reuse copy across clients.",
-      "We don't bill by the hour.",
-    ],
     whoFor:
       "Service businesses that bill by the job and need a site that loads fast and turns visitors into calls — without ongoing developer overhead.",
   },
@@ -59,11 +53,6 @@ export const SERVICES: Record<ServiceSlug, ServiceData> = {
       "Review velocity workflow built into your operator's daily flow.",
       "Citation cleanup, NAP consistency, schema markup.",
       "Monthly summary in plain language. Numbers, not graphs.",
-    ],
-    whatsNot: [
-      "We don't buy fake reviews.",
-      "We don't spin AI content. Every page is written for a real query.",
-      "We don't lock people into 12-month contracts.",
     ],
     whoFor:
       "Service businesses with a defined service area that need to win the Local Pack and stop losing calls to competitors who are simply showing up.",
@@ -85,11 +74,6 @@ export const SERVICES: Record<ServiceSlug, ServiceData> = {
       "Live in days, not weeks. Iterates with usage.",
       "Compliance-aware where it matters (medspa, regulated services).",
     ],
-    whatsNot: [
-      "Not a generic chatbot widget.",
-      "Not a third-party SaaS you'll get locked into.",
-      "Not a black box — you see the prompts, the rules, the logs.",
-    ],
     whoFor:
       "Operators who lose bookings during work hours. Solo providers, two-person crews, clinics where the front desk is also the chair.",
   },
@@ -109,11 +93,6 @@ export const SERVICES: Record<ServiceSlug, ServiceData> = {
       "Lead flow trace — where inquiries come in, where they leak.",
       "Recorded walkthrough video and a prioritized fix list.",
       "Credits 100% toward a website rebuild if you go forward.",
-    ],
-    whatsNot: [
-      "Not a 40-page PDF nobody reads.",
-      "Not a sales pitch dressed as a report.",
-      "Not a commitment — you walk away with the findings either way.",
     ],
     whoFor:
       "Anyone considering an agency engagement who wants to see what they'd actually be paying for before signing anything.",

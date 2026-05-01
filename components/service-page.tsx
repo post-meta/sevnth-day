@@ -32,44 +32,20 @@ export function ServicePage({ slug }: { slug: ServiceSlug }) {
         </section>
 
         <section className="border-b border-border">
-          <div className="mx-auto grid max-w-[1200px] gap-px bg-border px-0 md:grid-cols-2">
-            <div className="bg-background p-8 md:p-12">
-              <div className="label-mono mb-6">
-                <span className="divider-ascii">WHATS_INCLUDED</span>
-              </div>
-              <ul className="space-y-5">
-                {s.whatsIncluded.map((item, i) => (
-                  <li key={i} className="flex gap-4">
-                    <span className="label-mono shrink-0">
-                      [ {String(i + 1).padStart(2, "0")} ]
-                    </span>
-                    <span className="text-base leading-relaxed">{item}</span>
-                  </li>
-                ))}
-              </ul>
+          <div className="mx-auto max-w-[1200px] px-6 py-12 md:py-16">
+            <div className="label-mono mb-6">
+              <span className="divider-ascii">WHATS_INCLUDED</span>
             </div>
-
-            <div className="bg-foreground p-8 text-background md:p-12">
-              <div
-                className="label-mono mb-6"
-                style={{ color: "var(--background)", opacity: 0.55 }}
-              >
-                <span className="divider-ascii">WHATS_NOT</span>
-              </div>
-              <ul className="space-y-5">
-                {s.whatsNot.map((item, i) => (
-                  <li key={i} className="flex gap-4">
-                    <span
-                      className="label-mono shrink-0"
-                      style={{ color: "var(--background)", opacity: 0.55 }}
-                    >
-                      [ × ]
-                    </span>
-                    <span className="text-base leading-relaxed">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="space-y-5">
+              {s.whatsIncluded.map((item, i) => (
+                <li key={i} className="flex gap-4">
+                  <span className="label-mono shrink-0">
+                    [ {String(i + 1).padStart(2, "0")} ]
+                  </span>
+                  <span className="text-base leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
