@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SEVENTH DAY
 
-## Getting Started
+Growth operations for service businesses. Solo operator, Greater Seattle.
 
-First, run the development server:
+Production: https://sevnth.day
+
+## Stack
+
+- Next.js 16 App Router · React 19 · TypeScript strict
+- Tailwind CSS v4 (CSS-based config)
+- Inter + JetBrains Mono via `next/font/google`
+- Resend (transactional email) · Cal.com embed (booking)
+- Deploy: Vercel · Domain: Cloudflare DNS
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev   # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Required env vars (see `.env.example`):
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `RESEND_API_KEY` — from https://resend.com/api-keys (after verifying `sevnth.day` domain)
+- `RESEND_FROM` — defaults to `noreply@sevnth.day`
+- `RESEND_TO` — defaults to `01@sevnth.day`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Routes
 
-## Learn More
+| Route | Purpose |
+|---|---|
+| `/` | Homepage — hero + 4-job picker + proof + how-it-works |
+| `/grow`, `/rebuild`, `/handover`, `/catchup` | Job-specific landings |
+| `/services` + 4 sub-pages | Offering catalog |
+| `/cases` + 3 sub-pages | NW Garage / Copper Fox / Flawless |
+| `/about` | Founder story |
+| `/pricing` | Published prices |
+| `/contact` | Form + Cal.com embed |
+| `/api/contact` | POST → Resend → 01@sevnth.day |
+| `/sitemap.xml`, `/robots.txt`, `/opengraph-image` | SEO assets |
 
-To learn more about Next.js, take a look at the following resources:
+## Design tokens
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tech Brutalism + warm greige (REF.digital reference).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `--background: #ebe9e2` (warm greige)
+- `--foreground: #0a0a0a` (deep charcoal)
+- Two-color palette · accent through hover-inversion only
+- ASCII-style section dividers `─── LABEL ───`
+- Monospace technical labels in `[XX.XX_LABEL]` format
 
-## Deploy on Vercel
+See `app/globals.css` for token + utility classes (`label-mono`, `divider-ascii`, `invert-on-hover`, `bg-grid`).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploying
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Vercel → New Project → import `post-meta/sevnth-day`
+2. Set env vars (`RESEND_API_KEY`)
+3. Add custom domain `sevnth.day` (and `www.sevnth.day` redirect)
+4. Cloudflare: confirm A/CNAME records per Vercel
+
+## Status
+
+See `TODO.md` for outstanding items.

@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ebe9e2;
+  --foreground: #0a0a0a;
+  --muted: rgba(10, 10, 10, 0.55);
+  --border: rgba(10, 10, 10, 0.12);
+  --grid-line: rgba(10, 10, 10, 0.05);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-grid-line: var(--grid-line);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+/* Tech Brutalism: monospace technical labels */
+.label-mono {
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.55;
+}
+
+/* ASCII-style section divider */
+.divider-ascii::before {
+  content: "─── ";
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  opacity: 0.4;
+}
+.divider-ascii::after {
+  content: " ───";
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  opacity: 0.4;
+}
+
+/* Hover-inversion primitive: charcoal-on-greige → greige-on-charcoal */
+.invert-on-hover {
+  background: var(--foreground);
+  color: var(--background);
+  transition:
+    background 200ms ease,
+    color 200ms ease;
+}
+.invert-on-hover:hover {
+  background: var(--background);
+  color: var(--foreground);
+  box-shadow: inset 0 0 0 1px var(--foreground);
+}
+
+/* Background grid (REF.digital signature) */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
